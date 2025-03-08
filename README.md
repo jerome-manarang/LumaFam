@@ -1,2 +1,5 @@
-# LumaFam
-A website dedicated to showcase our fun organization fam!
+instalation:
+npm install
+
+run: 
+npm run dev
