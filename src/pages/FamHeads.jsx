@@ -6,7 +6,7 @@
 
 /*
  TODO: Create the famheads section for the Luma Fam website.
-
+git 
  Please put images in the assets folder for organization.
  The title is Fam Heads, and there should be an image and text below it.
  Each item in the carousel has this format:
