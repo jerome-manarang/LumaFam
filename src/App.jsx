@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import StickyHeader from './components/StickyHeader';
+import FamHeads from './pages/FamHeads';
 import './App.css';
 
 export default function App() {
@@ -15,8 +16,9 @@ export default function App() {
           <h1 className="text-4xl font-bold">🎉 Hangouts Section</h1>
         </section>
 
-        <section id="famheads" className="min-h-screen flex items-center justify-center bg-gray-200">
-          <h1 className="text-4xl font-bold">👥 Fam Heads Section</h1>
+        <section id="famheads">
+          <FamHeads />
+          <div className="background-stars"></div>
         </section>
 
         <section id="fusion" className="min-h-screen flex items-center justify-center bg-gray-300">
