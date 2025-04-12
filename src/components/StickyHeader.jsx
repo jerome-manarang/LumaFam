@@ -47,23 +47,21 @@ export default function StickyHeader() {
     };
   }, []);
 
-  const leftPosition = 30 + scrollPosition * 50;
+  const leftPosition = 15 + scrollPosition * 70;
   return (
     <>
-      <img 
-        src={LumaLogo} 
-        alt="Luma Fam" 
-        className="fixed top-9 transform -translate-x-1/2 z-20 h-12" 
+      <img
+        src={LumaLogo}
+        alt="Luma Fam"
+        className="fixed top-8 transform -translate-x-1/2 z-20 h-12"
         style={{ left: `${leftPosition}%` }}
       />
-      <nav className="fixed top-5 left-1/2 transform -translate-x-1/2 p-6 rounded-full z-10 bg-yellow-400 w-full max-w-[80%]">
-        <div className="container mx-auto flex items-center px-4 w-[75%]">
-          <div className="flex justify-between w-full lg:text-xl md:text-md">
-            <HashLink smooth to="#hangouts" className="px-2">Hangouts</HashLink>
-            <HashLink smooth to="#famheads" className="px-2">Fam Heads</HashLink>
-            <HashLink smooth to="#fusion" className="px-2">FUSION at UCI</HashLink>
-            <HashLink smooth to="#directory" className="px-2">Directory</HashLink>
-          </div>
+      <nav className="fixed top-5 left-1/2 transform -translate-x-1/2 p-5 rounded-full z-10 bg-yellow-400 w-full max-w-[80%] shadow-lg">
+        <div className="flex justify-between w-full lg:text-xl md:text-md">
+          <HashLink smooth to="#hangouts" className="w-[25%]">Hangouts</HashLink>
+          <HashLink smooth to="#famheads" className="w-[25%]">Fam Heads</HashLink>
+          <HashLink smooth to="#fusion" className="w-[25%]">FUSION at UCI</HashLink>
+          <HashLink smooth to="#directory" className="w-[25%]">Directory</HashLink>
         </div>
       </nav>
     </>
